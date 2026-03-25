@@ -1039,7 +1039,7 @@ The `dns` interceptor enables you to cache DNS lookups for a given duration, per
   - It can be either `4` or `6`.
   - It will only take effect if `dualStack` is `false`.
 - `lookup: (hostname: string, options: LookupOptions, callback: (err: NodeJS.ErrnoException | null, addresses: DNSInterceptorRecord[]) => void) => void` - Custom lookup function. Default: `dns.lookup`.
-  - For more info see [dns.lookup](https://nodejs.org/api/dns.html#dns_dns_lookup_hostname_options_callback).
+  - For more info see [dns.lookup](https://nodejs.org/api/dns.html#dnslookuphostname-options-callback).
 - `pick: (origin: URL, records: DNSInterceptorRecords, affinity: 4 | 6) => DNSInterceptorRecord` - Custom pick function. Default: `RoundRobin`.
   - The function should return a single record from the records array.
   - By default a simplified version of Round Robin is used.
