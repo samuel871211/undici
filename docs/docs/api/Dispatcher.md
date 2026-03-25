@@ -1036,7 +1036,7 @@ The `dns` interceptor enables you to cache DNS lookups for a given duration, per
 - `dualStack` - Whether to resolve both IPv4 and IPv6 addresses. Default: `true`.
   - It will also attempt a happy-eyeballs-like approach to connect to the available addresses in case of a connection failure.
 - `affinity` - Whether to use IPv4 or IPv6 addresses. Default: `4`.
-  - It can be either `'4` or `6`.
+  - It can be either `4` or `6`.
   - It will only take effect if `dualStack` is `false`.
 - `lookup: (hostname: string, options: LookupOptions, callback: (err: NodeJS.ErrnoException | null, addresses: DNSInterceptorRecord[]) => void) => void` - Custom lookup function. Default: `dns.lookup`.
   - For more info see [dns.lookup](https://nodejs.org/api/dns.html#dns_dns_lookup_hostname_options_callback).
