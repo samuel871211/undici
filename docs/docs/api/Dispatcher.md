@@ -963,7 +963,7 @@ const { Client, interceptors } = require("undici");
 const { redirect } = interceptors;
 
 const client = new Client("http://service.example").compose(
-  redirect({ maxRedirections: 3, throwOnMaxRedirects: true })
+  redirect({ maxRedirections: 3, throwOnMaxRedirect: true })
 );
 client.request({ path: "/" })
 ```
